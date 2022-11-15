@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.ClientInit.Controller">
+   <children>
+      <ImageView fx:id="OpeningImage" fitHeight="699.0" fitWidth="1206.0" layoutX="8.0" opacity="0.32" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-6.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@CARopening.jpg" />
+         </image></ImageView>
+      <Pane fx:id="OpeningPane" layoutX="400.0" layoutY="300.0" prefHeight="388.0" prefWidth="395.0" style="-fx-background-color: #fff; -fx-background-radius: 30;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Button id="viewerButton" fx:id="viewer" layoutX="146.0" layoutY="81.0" mnemonicParsing="false" onAction="#GetViewer" style="-fx-background-radius: 10;" text="VIEWER">
+               <font>
+                  <Font name="Yu Gothic UI Semibold" size="19.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label layoutX="182.0" layoutY="139.0" text="OR">
+               <font>
+                  <Font name="Yu Gothic UI Semibold" size="15.0" />
+               </font>
+            </Label>
+            <Button id="meufacturerButton" fx:id="menufacturer" layoutX="98.0" layoutY="180.0" mnemonicParsing="false" onAction="#GetMan" prefHeight="42.0" prefWidth="195.0" style="-fx-background-radius: 10;" text="MENUFACTURER">
+               <font>
+                  <Font name="Yu Gothic UI Semibold" size="19.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+         </children>
+      </Pane>
+      <Label layoutX="121.0" layoutY="43.0" prefHeight="156.0" prefWidth="959.0" text="WELCOME TO  A6PAP CAR WAREHOUSE" textAlignment="CENTER">
+         <font>
+            <Font name="Yu Gothic UI Light" size="50.0" />
+         </font>
+      </Label>
+      <Pane fx:id="EnterViwerPane" layoutX="400.0" layoutY="300.0" prefHeight="388.0" prefWidth="395.0" style="-fx-background-color: #fff; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="92.0" layoutY="70.0" prefHeight="34.0" prefWidth="189.0" text="ENTER YOUR NAME">
+               <font>
+                  <Font name="Yu Gothic UI Semibold" size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="UserNameOfViewer" layoutX="69.0" layoutY="127.0" prefHeight="42.0" prefWidth="245.0" style="-fx-background-radius: 10;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Button fx:id="EnterAsViwerButton" layoutX="130.0" layoutY="194.0" mnemonicParsing="false" onAction="#EnterAsViewer" prefHeight="31.0" prefWidth="112.0" style="-fx-background-radius: 10;" text="ENTER">
+               <font>
+                  <Font name="Yu Gothic UI Semibold" size="19.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#BackToHome1" text="BACK">
+               <font>
+                  <Font name="Yu Gothic UI Semibold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane fx:id="EnterManPane" layoutX="400.0" layoutY="300.0" prefHeight="388.0" prefWidth="395.0" style="-fx-background-color: #fff; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="86.0" layoutY="47.0" prefHeight="34.0" prefWidth="189.0" text="       User Name">
+               <font>
+                  <Font name="Yu Gothic UI Semibold" size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="UserNameOfMenfacturer" layoutX="68.0" layoutY="87.0" prefHeight="42.0" prefWidth="245.0" style="-fx-background-radius: 10;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Button fx:id="EnterAsMenufacturerButton" layoutX="125.0" layoutY="247.0" mnemonicParsing="false" onAction="#EnterAsMenufacturer" prefHeight="31.0" prefWidth="112.0" style="-fx-background-radius: 10;" text="ENTER">
+               <font>
+                  <Font name="Yu Gothic UI Semibold" size="19.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label layoutX="125.0" layoutY="143.0" text="PassWord">
+               <font>
+                  <Font name="Yu Gothic UI Semibold" size="19.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="PassWord" layoutX="68.0" layoutY="179.0" prefHeight="42.0" prefWidth="245.0" style="-fx-background-radius: 10;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </PasswordField>
+            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#BackToHome2" text="BACK">
+               <font>
+                  <Font name="Yu Gothic UI Semibold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#exit" prefHeight="437.0" prefWidth="901.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Task.TaskController">
+   <children>
+      <Label layoutX="291.0" prefHeight="75.0" prefWidth="320.0" text="         10 February  2021 to 12 March 2021">
+         <font>
+            <Font name="Bodoni MT Condensed" size="24.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="Progress" layoutY="98.0" prefHeight="82.0" prefWidth="901.0" progress="0.0" />
+      <Label fx:id="DayCount" layoutX="572.0" layoutY="187.0" prefHeight="63.0" prefWidth="329.0">
+         <font>
+            <Font name="Yu Gothic UI Semibold" size="25.0" />
+         </font>
+      </Label>
+      <PieChart fx:id="Pie" layoutX="-1.0" layoutY="180.0" prefHeight="256.0" prefWidth="391.0" />
+      <Button layoutX="728.0" layoutY="336.0" mnemonicParsing="false" onAction="#check" prefHeight="56.0" prefWidth="70.0" style="-fx-background-radius: 50;" text="Check">
+         <font>
+            <Font name="Yu Gothic UI Semibold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="-1.0" layoutY="-1.0" mnemonicParsing="false" onAction="#exit" prefHeight="46.0" prefWidth="70.0" style="-fx-background-radius: 50;" text="Exit" />
+   </children>
+</AnchorPane>
